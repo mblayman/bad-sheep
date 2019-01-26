@@ -3,7 +3,7 @@
 [ext_resource path="res://textures/grass.png" type="Texture" id=1]
 [ext_resource path="res://textures/tree.png" type="Texture" id=2]
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="grass" type="Sprite" parent="." index="0"]
 
@@ -33,6 +33,6 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree/StaticBody2D" index="0"]
 
 build_mode = 0
-polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( 1.10001, 1.025, 62.975, 1.275, 62.85, 62.275, 1.22501, 62.275 )
 
 
