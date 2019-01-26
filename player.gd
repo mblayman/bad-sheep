@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 const MOVE_UNIT = 64
 
-func _physics_process(delta):
+func _process(delta):
 	if Input.is_action_just_pressed("ui_up"):
 		move_and_collide(Vector2(0, -MOVE_UNIT))
 	if Input.is_action_just_pressed("ui_down"):
