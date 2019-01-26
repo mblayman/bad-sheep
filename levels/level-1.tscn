@@ -32,4 +32,6 @@ __meta__ = {
 
 [node name="player" parent="." index="1" instance=ExtResource( 2 )]
 
+position = Vector2( 32, 32 )
+
 

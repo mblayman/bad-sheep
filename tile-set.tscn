@@ -3,7 +3,7 @@
 [ext_resource path="res://textures/grass.png" type="Texture" id=1]
 [ext_resource path="res://textures/tree.png" type="Texture" id=2]
 
-[node name="Node" type="Node"]
+[node name="Node" type="Node" index="0"]
 
 [node name="grass" type="Sprite" parent="." index="0"]
 
