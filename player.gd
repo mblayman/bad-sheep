@@ -11,3 +11,6 @@ func _process(delta):
 		move_and_collide(Vector2(-MOVE_UNIT, 0))
 	if Input.is_action_just_pressed("ui_right"):
 		move_and_collide(Vector2(MOVE_UNIT, 0))
+
+func _on_start_player_turn():
+	print("Player is starting player turn.")
