@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const MOVE_UNIT = 64
+const MOVE_UNIT = 32
 
 # Directions
 const UP = 1

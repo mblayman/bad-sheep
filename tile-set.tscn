@@ -9,16 +9,19 @@
 
 texture = ExtResource( 1 )
 centered = false
-region_rect = Rect2( 0, 0, 64, 64 )
+region_rect = Rect2( 0, 0, 32, 32 )
 _sections_unfolded = [ "Animation", "Region", "Visibility" ]
 
 [node name="tree" type="Sprite" parent="." index="1"]
 
-position = Vector2( 128, 0 )
+position = Vector2( 64, 0 )
 texture = ExtResource( 2 )
 centered = false
-region_rect = Rect2( 0, 0, 64, 64 )
+region_rect = Rect2( 0, 0, 32, 32 )
 _sections_unfolded = [ "Offset", "Region", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="tree" index="0"]
 
@@ -33,6 +36,6 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree/StaticBody2D" index="0"]
 
 build_mode = 0
-polygon = PoolVector2Array( 1.10001, 1.025, 62.975, 1.275, 62.85, 62.275, 1.22501, 62.275 )
+polygon = PoolVector2Array( 1.375, 1.375, 30.875, 1.375, 30.875, 30.625, 1.375, 30.625 )
 
 

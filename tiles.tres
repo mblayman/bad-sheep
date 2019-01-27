@@ -6,7 +6,7 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 1.10001, 1.025, 62.975, 1.275, 62.85, 62.275, 1.22501, 62.275 )
+points = PoolVector2Array( 1.375, 1.375, 30.875, 1.375, 30.875, 30.625, 1.375, 30.625 )
 
 [resource]
 
@@ -14,7 +14,7 @@ points = PoolVector2Array( 1.10001, 1.025, 62.975, 1.275, 62.85, 62.275, 1.22501
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 64, 64 )
+0/region = Rect2( 0, 0, 32, 32 )
 0/is_autotile = false
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -23,7 +23,7 @@ points = PoolVector2Array( 1.10001, 1.025, 62.975, 1.275, 62.85, 62.275, 1.22501
 1/texture = ExtResource( 2 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 0, 0, 64, 64 )
+1/region = Rect2( 0, 0, 32, 32 )
 1/is_autotile = false
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
