@@ -1,29 +1,157 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://textures/grass.png" type="Texture" id=1]
-[ext_resource path="res://textures/tree.png" type="Texture" id=2]
+[ext_resource path="res://textures/background.png" type="Texture" id=1]
 
 [node name="Node" type="Node"]
 
-[node name="grass" type="Sprite" parent="." index="0"]
+[node name="grass_top_left" type="Sprite" parent="." index="0"]
 
+z_index = 1
 texture = ExtResource( 1 )
 centered = false
-region_rect = Rect2( 0, 0, 32, 32 )
-_sections_unfolded = [ "Animation", "Region", "Visibility" ]
+region_enabled = true
+region_rect = Rect2( 160, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
 
-[node name="tree" type="Sprite" parent="." index="1"]
+[node name="grass_top_center" type="Sprite" parent="." index="1"]
 
 position = Vector2( 64, 0 )
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
 centered = false
-region_rect = Rect2( 0, 0, 32, 32 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
-__meta__ = {
-"_edit_group_": true
-}
+region_enabled = true
+region_rect = Rect2( 0, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="tree" index="0"]
+[node name="grass_top_right" type="Sprite" parent="." index="2"]
+
+position = Vector2( 128, 0 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_left" type="Sprite" parent="." index="3"]
+
+position = Vector2( 0, 64 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_center" type="Sprite" parent="." index="4"]
+
+position = Vector2( 64, 64 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_right" type="Sprite" parent="." index="5"]
+
+position = Vector2( 128, 64 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_bottom_left" type="Sprite" parent="." index="6"]
+
+position = Vector2( 0, 128 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_bottom_center" type="Sprite" parent="." index="7"]
+
+position = Vector2( 64, 128 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 0, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_bottom_right" type="Sprite" parent="." index="8"]
+
+position = Vector2( 128, 128 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="dirt" type="Sprite" parent="." index="9"]
+
+position = Vector2( 192, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+_sections_unfolded = [ "Material", "Offset", "Region", "Visibility" ]
+
+[node name="grass_inner_bottom_right" type="Sprite" parent="." index="10"]
+
+position = Vector2( 192, 0 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_inner_top_right" type="Sprite" parent="." index="11"]
+
+position = Vector2( 192, 64 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 32, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_inner_bottom_left" type="Sprite" parent="." index="12"]
+
+position = Vector2( 0, 192 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_inner_top_left" type="Sprite" parent="." index="13"]
+
+position = Vector2( 64, 192 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="fence_bottom" type="Sprite" parent="." index="14"]
+
+position = Vector2( 128, 192 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_bottom" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -33,9 +161,299 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tree/StaticBody2D" index="0"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_bottom/StaticBody2D" index="0"]
 
 build_mode = 0
-polygon = PoolVector2Array( 1.375, 1.375, 30.875, 1.375, 30.875, 30.625, 1.375, 30.625 )
+polygon = PoolVector2Array( 2.5, 4, 29.25, 3.875, 28.875, 26.125, 3.375, 26.125 )
+
+[node name="fence_side" type="Sprite" parent="." index="15"]
+
+position = Vector2( 192, 192 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_side" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_side/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 8.25, 5.05, 21, 5.05, 21.5, 28.8, 8, 28.8 )
+
+[node name="fence_bottom_right" type="Sprite" parent="." index="16"]
+
+position = Vector2( 256, 192 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_bottom_right" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_bottom_right/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 21.5, 5.55, 21.75, 25.05, 3.5, 24.8, 3, 5.55 )
+
+[node name="rock" type="Sprite" parent="." index="17"]
+
+position = Vector2( 320, 192 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 64, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rock" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rock/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 27, 7.05, 26, 27.05, 8.25, 28.8, 7.5, 7.55 )
+
+[node name="fence_top_left" type="Sprite" parent="." index="18"]
+
+position = Vector2( 0, 256 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 96, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_top_left" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_top_left/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 28.5, 6.54999, 28, 27.8, 7.75, 27.8, 8.5, 6.54999 )
+
+[node name="fence_top_right" type="Sprite" parent="." index="19"]
+
+position = Vector2( 64, 256 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 96, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_top_right" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_top_right/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 20.25, 9.79999, 20.5, 27.55, 4.75, 27.3, 4.75, 9.54999 )
+
+[node name="fence_bottom_left" type="Sprite" parent="." index="20"]
+
+position = Vector2( 128, 256 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 96, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_bottom_left" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_bottom_left/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 28.25, 5.79999, 28, 27.55, 8.5, 27.3, 7.5, 6.04999 )
+
+[node name="fence_broken_1" type="Sprite" parent="." index="21"]
+
+position = Vector2( 192, 256 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 96, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_broken_1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_broken_1/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 3, 5.29999, 28.5, 5.79999, 28.25, 26.8, 3, 27.55 )
+
+[node name="fence_broken_2" type="Sprite" parent="." index="22"]
+
+position = Vector2( 256, 256 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 96, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_broken_2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_broken_2/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 29.25, 26.55, 6, 25.8, 3.75, 6.29999, 16.75, 6.29999, 16.75, 6.29999 )
+
+[node name="fence_broken_3" type="Sprite" parent="." index="23"]
+
+position = Vector2( 320, 256 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 96, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence_broken_3" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence_broken_3/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 28.75, 7.79999, 28.75, 26.55, 3.5, 26.05, 4.25, 16.05 )
+
+[node name="small_rocks" type="Sprite" parent="." index="24"]
+
+position = Vector2( 0, 320 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 128, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="small_rocks" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="small_rocks/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 27.75, 8.54999, 12.5, 26.8, 6.5, 9.04999 )
+
+[node name="grass_patch_3" type="Sprite" parent="." index="25"]
+
+position = Vector2( 0, 384 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 160, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="house" type="Sprite" parent="." index="26"]
+
+position = Vector2( 64, 320 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 128, 96, 64 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_patch_1" type="Sprite" parent="." index="27"]
+
+position = Vector2( 256, 320 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 128, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
+
+[node name="grass_patch_2" type="Sprite" parent="." index="28"]
+
+position = Vector2( 320, 320 )
+z_index = 1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 128, 32, 32 )
+_sections_unfolded = [ "Offset", "Region", "Z Index" ]
 
 
